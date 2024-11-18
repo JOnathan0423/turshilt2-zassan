@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гадаргуугийн Таталцлын Туршилт - Визуал Лаборатори</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Гадаргуугийн Таталцлын Туршилт - Визуал Лаборатори</h1>
+    <div id="experiment-container">
+        <label for="dropMass">Дуслын жин (г):</label>
+        <input type="number" id="dropMass" step="0.01" value="0.05"><br>
+        
+        <label for="radius">Труба/сталагмометрийн радиус (см):</label>
+        <input type="number" id="radius" step="0.01" value="0.5"><br>
+        
+        <label for="dropCount">Дуслын тоо:</label>
+        <input type="number" id="dropCount" value="10"><br>
+
+        <label for="liquidSelect">Шингэний төрөл:</label>
+        <select id="liquidSelect">
+            <option value="water">Ус</option>
+            <option value="oil">Тос</option>
+            <option value="alcohol">Спирт</option>
+        </select><br>
+
+        <label for="planetSelect">Гараг сонгох:</label>
+        <select id="planetSelect">
+            <option value="earth">Дэлхий</option>
+            <option value="moon">Сар</option>
+            <option value="mars">Ангараг</option>
+        </select><br>
+        
+        <button id="calculateBtn">Гадаргуугийн таталцлыг тооцоолох</button>
+        <p id="result"></p>
+    </div>
+    <canvas id="experimentCanvas" width="600" height="400"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
